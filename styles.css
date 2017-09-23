@@ -1,5 +1,14 @@
+/*Web Fonts*/
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+/**/
+
+
 * {
   box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto Slab', serif;
 }
 
 /*Main Element Styles*/
@@ -16,15 +25,17 @@ div.title {
   width: 100%;
   background: #17b7cd;
   text-align: center;
+  padding-top: .1em;
+  padding-bottom: .1em;
 }
 
 h1.main-title {
   color: white;
-  display: inline-block;
+  display: block;
 }
 
 img.logo {
-  width: 25%;
+  width: 20%;
   display: block;
   margin: auto;
 }
@@ -32,7 +43,7 @@ img.logo {
 nav.main-nav {
   width: 100%;
   background-color: #17b7cd;
-  padding-top: 1.8em;
+  padding-top: 1.7em;
   padding-bottom: 1em;
 }
 
@@ -89,6 +100,7 @@ img.img {
 div.contact {
   padding-top: 1em;
   border-top: 2px solid grey;
+  width: 95%;
 }
 
 h2.contact {
@@ -99,10 +111,14 @@ span.contact {
   font-weight: bold;
 }
 
+div.contact-content {
+  border-bottom: 2px solid grey;
+  padding-bottom: 1.7em;
+}
+
 div.map {
-  width: 90%;
+  width: 95%;
   margin: auto;
-  border-top: 2px solid grey;
   padding-top: 1em;
 }
 
@@ -120,6 +136,7 @@ footer.main-footer {
   text-align: center;
   color: grey;
   border-top: 2px solid;
+  font-size: 0.8em;
 }
 
 
@@ -140,6 +157,16 @@ div.back-to-top {
 
 /*Pseudo Class Selectors*/
 
+a:link {
+  text-decoration: none;
+}
 
+a:visited {
+
+}
 
 /*Media Querys*/
+
+a:hover li.nav-item {
+  box-shadow: 0 2px 5px black;
+}
